@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <script src="js/script.js" defer></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <i class="fas fa-bars header__menubar"></i>
+        <h1 class="header__logo">Sneakers</h1>
+        <nav class="header__nav">
+          <ul class="header__nav__ul">
+            <i class="fas fa-times header__nav__close"></i>
+            <li class="header__nav__li">
+              <a href="#" class="header__nav__a">Collections</a>
+            </li>
+            <li class="header__nav__li">
+              <a href="#" class="header__nav__a">Men</a>
+            </li>
+            <li class="header__nav__li">
+              <a href="#" class="header__nav__a">Women</a>
+            </li>
+            <li class="header__nav__li">
+              <a href="#" class="header__nav__a">About</a>
+            </li>
+            <li class="header__nav__li">
+              <a href="#" class="header__nav__a">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <i class="fas fa-shopping-cart cart__icon"></i>
+        <img src="images/image-avatar.png" alt="profile" class="profile__img" />
+        <div class="cart__window">
+          <h3 class="cart__h3">Cart</h3>
+          <p class="cart__noitemmsg">Your cart is empty.</p>
+          <div class="cart__container">
+            <div class="cart__items" data-id="1">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+                class="cart__itemthumb"
+              />
+              <div class="cart__itemdetails">
+                <p class="cart__itemtitle">Fall limited edition sneakers</p>
+                <p class="cart__itemprice">
+                  $125.00 x <span data-cart-quantity>3</span
+                  ><span class="cart__itemtotal"> $375.00 </span>
+                </p>
+              </div>
+              <i class="far fa-trash-alt cart__deletebtn"></i>
+            </div>
+            <button type="button" class="cart__checkoutbtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="gallery">
+        <div class="gallery__previewcontainer">
+          <img
+            src="images/image-product-1.jpg"
+            alt=""
+            class="gallery__preview"
+          />
+          <i class="fas fa-chevron-circle-right gallery__rightbtn"></i>
+          <i class="fas fa-chevron-circle-left gallery__leftbtn"></i>
+        </div>
+        <!-- <div class="gallery__images">
+          <img src="images/image-product-1.jpg" alt="" />
+          <img src="images/image-product-2.jpg" alt="" />
+          <img src="images/image-product-3.jpg" alt="" />
+          <img src="images/image-product-4.jpg" alt="" />
+        </div> -->
+
+        <div class="gallery__thumbnail">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumb1"
+            class="active"
+          />
+          <img src="images/image-product-2-thumbnail.jpg" alt="thumb2" />
+          <img src="images/image-product-3-thumbnail.jpg" alt="thumb3" />
+          <img src="images/image-product-4-thumbnail.jpg" alt="thumb4" />
+        </div>
+      </div>
+      <div class="description">
+        <p class="description__eyebrow">Sneaker Company</p>
+        <h2 class="description__heading">Fall limited edition sneakers</h2>
+        <p class="description__desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="description__pricecontainer">
+          <div class="description__pricesection">
+            <p class="description__price">$125.00</p>
+            <p class="description__offer">50%</p>
+          </div>
+          <p class="description__withoutofferprice">$250.00</p>
+        </div>
+        <div class="buttons">
+          <div class="buttons__quantitybtn">
+            <i class="fas fa-minus buttons__quantityminus"></i>
+            <p class="buttons__quantitycount">0</p>
+            <i class="fas fa-plus buttons__quantityplus"></i>
+          </div>
+          <button type="button" class="buttons__addtocart">
+            <i class="fas fa-shopping-cart addtocart-icon"></i>Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="overlay"></div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ElayarajaSubramanian">Elayaraja Subramanian</a
+      >.
+    </div>
+    <!-- <template id="cart-item-template">
+      <div class="cart__items" data-cart-item>
+        <img
+          src="images/image-product-1-thumbnail.jpg"
+          alt=""
+          class="cart__itemthumb"
+          data-cart-image
+        />
+        <div class="cart__itemdetails" data-cart-item-details>
+          <p class="cart__itemtitle" data-cart-title>
+            Fall limited edition sneakers
+          </p>
+          <p data-cart-price class="cart__itemprice">
+            $125.00 <span data-cart-quantity></span
+            ><span class="cart__itemtotal" data-cart-totalprice> </span>
+          </p>
+        </div>
+        <i class="far fa-trash-alt cart__deletebtn"></i>
+      </div>
+    </template> -->
+  </body>
+</html>
