@@ -456,7 +456,7 @@ main {
     display: none;
   }
   .header__nav__close {
-    padding: 1rem;
+    padding: 1rem 0 0 2rem;
     display: block !important;
   }
   .header__nav:hover {
@@ -476,6 +476,9 @@ main {
   .header__nav__a {
     padding: 0;
     color: var(--black-clr);
+  }
+  .header__nav__a.active {
+    border-bottom: none;
   }
   .cart__window {
     width: 96%;
