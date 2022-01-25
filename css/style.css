@@ -96,7 +96,7 @@ button {
   border-bottom: 3px solid transparent;
 }
 
-.header__nav__a:hover {
+.header__nav__a.active {
   border-bottom: 3px solid var(--orange-clr);
 }
 

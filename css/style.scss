@@ -62,7 +62,7 @@ button {
       padding: 2rem 0;
       display: block;
       border-bottom: 3px solid transparent;
-      &:hover {
+      &.active {
         border-bottom: 3px solid var(--orange-clr);
       }
     }
